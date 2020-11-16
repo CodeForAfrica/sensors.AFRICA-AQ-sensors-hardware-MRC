@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -24752,8 +24752,8 @@ Source: &lt;a href= "http://www.amphenol.info/downloads/C707_10M006_512_2.pdf"&g
 <attribute name="NAME" x="290.068" y="126.746" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="290.068" y="128.905" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+8" gate="1" x="299.212" y="123.19" smashed="yes" rot="R270">
-<attribute name="VALUE" x="294.132" y="125.73" size="1.778" layer="96"/>
+<instance part="P+8" gate="1" x="261.112" y="123.19" smashed="yes" rot="R90">
+<attribute name="VALUE" x="266.192" y="120.65" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -25133,9 +25133,9 @@ Source: &lt;a href= "http://www.amphenol.info/downloads/C707_10M006_512_2.pdf"&g
 <wire x1="57.404" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RI" gate="G$1" pin="C"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
-<wire x1="290.576" y1="123.19" x2="296.672" y2="123.19" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="263.652" y1="123.19" x2="269.494" y2="123.19" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -25260,9 +25260,9 @@ Source: &lt;a href= "http://www.amphenol.info/downloads/C707_10M006_512_2.pdf"&g
 <label x="102.362" y="58.674" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="269.494" y1="123.19" x2="256.286" y2="123.19" width="0.1524" layer="91"/>
-<label x="257.302" y="123.698" size="1.778" layer="95"/>
+<pinref part="RI" gate="G$1" pin="C"/>
+<wire x1="290.576" y1="123.19" x2="297.18" y2="123.19" width="0.1524" layer="91"/>
+<label x="291.592" y="123.698" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">

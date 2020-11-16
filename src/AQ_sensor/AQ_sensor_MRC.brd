@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -8581,18 +8581,19 @@ design rules under a new name.</description>
 <wire x1="105.54" y1="67.975" x2="106.925" y2="67.975" width="0.4" layer="1"/>
 <wire x1="108" y1="66.9" x2="108" y2="44.5" width="0.4" layer="1"/>
 <wire x1="106.925" y1="67.975" x2="108" y2="66.9" width="0.4" layer="1"/>
-<contactref element="RI" pad="C"/>
 <wire x1="15.4" y1="27.4" x2="12.1" y2="27.4" width="0.4" layer="16"/>
 <wire x1="12.1" y1="27.4" x2="11.9" y2="27.2" width="0.4" layer="16"/>
 <via x="11.9" y="27.2" extent="1-16" drill="0.35"/>
 <wire x1="11.9" y1="27.2" x2="10.9" y2="26.2" width="0.4" layer="1"/>
-<wire x1="2.1" y1="23" x2="2.1" y2="21.7" width="0.4" layer="1"/>
-<wire x1="2.1" y1="21.7" x2="3" y2="20.8" width="0.4" layer="1"/>
-<wire x1="5.25" y1="20.8" x2="5.35" y2="20.9" width="0.4" layer="1"/>
 <wire x1="10.9" y1="26.2" x2="5.3" y2="26.2" width="0.4" layer="1"/>
-<wire x1="5.3" y1="26.2" x2="2.1" y2="23" width="0.4" layer="1"/>
-<wire x1="3" y1="20.8" x2="5.25" y2="20.8" width="0.4" layer="1"/>
 <wire x1="14.2" y1="9.1" x2="13.7" y2="8.6" width="0.4" layer="1"/>
+<contactref element="R1" pad="1"/>
+<via x="5.3" y="26.2" extent="1-16" drill="0.35"/>
+<wire x1="5.3" y1="26.2" x2="4.1" y2="26.2" width="0.4" layer="16"/>
+<wire x1="2.2" y1="24.3" x2="2.2" y2="22.9" width="0.4" layer="16"/>
+<wire x1="2.2" y1="22.9" x2="3" y2="22.1" width="0.4" layer="16"/>
+<wire x1="3" y1="22.1" x2="5.15" y2="22.1" width="0.4" layer="16"/>
+<wire x1="4.1" y1="26.2" x2="2.2" y2="24.3" width="0.4" layer="16"/>
 </signal>
 <signal name="+3V3" class="1">
 <contactref element="SV1" pad="1"/>
@@ -9150,7 +9151,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="RI_5V">
 <contactref element="U2" pad="11"/>
-<contactref element="R1" pad="1"/>
 <wire x1="15.825" y1="6.3" x2="17.5" y2="6.3" width="0.3" layer="1"/>
 <wire x1="17.5" y1="6.3" x2="18" y2="6.8" width="0.3" layer="1"/>
 <via x="18" y="6.8" extent="1-16" drill="0.35"/>
@@ -9164,10 +9164,12 @@ design rules under a new name.</description>
 <wire x1="14.4" y1="17.8" x2="13.6" y2="18.6" width="0.3" layer="1"/>
 <wire x1="13.6" y1="22.9" x2="11.8" y2="24.7" width="0.3" layer="1"/>
 <wire x1="13.6" y1="18.6" x2="13.6" y2="22.9" width="0.3" layer="1"/>
-<via x="11.8" y="24.7" extent="1-16" drill="0.35"/>
-<wire x1="11.8" y1="24.7" x2="5.8" y2="24.7" width="0.3" layer="16"/>
-<wire x1="5.15" y1="24.05" x2="5.15" y2="22.1" width="0.3" layer="16"/>
-<wire x1="5.8" y1="24.7" x2="5.15" y2="24.05" width="0.3" layer="16"/>
+<contactref element="RI" pad="C"/>
+<wire x1="11.8" y1="24.7" x2="5.9" y2="24.7" width="0.3" layer="1"/>
+<wire x1="3.4" y1="21.3" x2="3.8" y2="20.9" width="0.3" layer="1"/>
+<wire x1="3.8" y1="20.9" x2="5.35" y2="20.9" width="0.3" layer="1"/>
+<wire x1="5.9" y1="24.7" x2="3.4" y2="22.2" width="0.3" layer="1"/>
+<wire x1="3.4" y1="22.2" x2="3.4" y2="21.3" width="0.3" layer="1"/>
 </signal>
 <signal name="N$14">
 <contactref element="R1" pad="2"/>
